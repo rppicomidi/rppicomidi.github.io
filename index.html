@@ -3,9 +3,131 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/siimple.min.css">
+        <title>rppicomidi | Raspberry Pi Pico software and hardware projects for USB MIDI and old school serial port MIDI</title>
+        <meta name="description" content="Raspberry Pi Pico software and hardware projects for USB MIDI and old school serial port MIDI." />
 	</head>
 	<body>
-		<h1>Hello, World!</h1>
+        <div class="grid main">
+		<h1>Welcome!</h1>
+        <p>My GitHub name is <i>rppicomidi</i> because I like to develop MIDI projects for the Raspberry Pi Pico and Pico W.</p>
+        <p>This website will direct you to my software and hardware projects
+            for USB MIDI and old school serial port MIDI and to my software
+            libraries that the projects use for user interfaces, for Pico W Wi-Fi,
+            and for non-volatile storage. Most of the code is in C or C++.</p>
+        </div>
+        <div class="grid main">
+        <h2>MIDI Projects</h2>
+        <ul>
+            <li><a href="https://github.com/rppicomidi/midi2usbhost">midi2usbhost</a> 
+                Add old school MIDI IN and MIDI OUT to a MIDI device with a USB B device port.
+            </li>
+            <li><a href="https://github.com/rppicomidi/midi2usbdev">midi2usbdev</a> 
+                Create a PC MIDI interface with one MIDI IN and one MIDI OUT.
+            </li>
+            <li><a href="https://github.com/rppicomidi/midi2usbhub">midi2usbhub</a> 
+                Interconnect MIDI devices via a USB hub or old school MIDI. Configure the
+                interconnections using a serial port console and save the configurations as
+                presets in the Pico board's serial flash memory. Back up the presets to
+                USB flash.
+            </li>
+            <li><a href="https://github.com/rppicomidi/pico-usb-midi-filter">pico-usb-midi-filter</a>
+                Connect a Raspberry Pi Pico between a USB MIDI device and a USB Host to modify the USB MIDI traffic.
+                The filtering is determined in the source code. The USB descriptor of the attached device is not
+                changed.
+            </li>
+            <li>
+                <a href="https://github.com/rppicomidi/pico-usb-midi-processor">pico-usb-midi-processor</a>
+                Like pico-usb-midi-filter, except it has an OLED display and buttons for configuring what
+                processing to perform, it has up to 8 presets per device, and it allows you to save
+                presets to a USB flash drive.
+            </li>
+            <li>
+                <i>Coming soon: midi2usbhub-web</i>. The same as midi2usbhub, except it uses PIO for 2 serial MIDI ports and it
+                adds an embedded webserver UI for configuring routing and an OLED screen+USB keyboard UI for setting up
+                Wi-Fi and recalling presets.
+            </li>
+        </ul>
+        <div class="grid main">
+        <h2>MIDI-related Software Libraries</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/rppicomidi/midi_uart_lib">midi_uart_lib</a>
+                Library for using Raspberry Pi Pico UART1 or both UART0 and UART1 for serial port MIDI.
+                Uses <a href="https://github.com/rppicomidi/ring_buffer_lib">ring_buffer_lib</a>
+                to add user-configurable deep FIFOs.
+            </li>
+            <li>
+                <a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>
+                Library adds up to 4 PIO-based UARTs configured for MIDI to a Rasberry Pi Pico or
+                Pico W. The MIDI OUT transmitter is open-drain, so it interfaces better with the
+                MIDI OUT circuit than the built-in UART. The MIDI IN only interrupts and enques
+                data received with no error. Uses <a href="https://github.com/rppicomidi/ring_buffer_lib">ring_buffer_lib</a>
+                to add user configurable deep FIFOs.
+            </li>
+            <li>
+                <a href="https://github.com/rppicomidi/tinyusb">fork of tinyusb</a> This was as far as I know the first public
+                USB MIDI Host driver for the Raspberry Pi Pico. It has been superceded for most uses by <a href="https://github.com/hathach/tinyusb/pull/1627">
+                    this pull request</a> that better uses the built-in hardware for bulk endpoint transfers
+                    and also fixes bugs that were preventing the driver from supporting USB hubs. However, this fork
+                    does contain hooks for caching the USB device descriptor of attached USB devices; these hooks allow
+                    the <a href="https://github.com/rppicomidi/pico-usb-midi-filter">pico-usb-midi-filter</a> and
+                    <a href="https://github.com/rppicomidi/pico-usb-midi-processor">pico-usb-midi-processor</a> projects
+                    to make the USB descriptor on the Pico's device port exactly the same as the USB descriptor of the
+                    MIDI device attached to the Pico-PIO-USB host port. If the TinyUSB project merges a pull reequest
+                    for the USB MIDI Host driver, this fork will be mostly unnecessary.
+            </li>
+            <li>
+                <i>Coming soon: pio_midi_out_lib</i>. Library adds up to 8 PIO-based MIDI OUT serial ports. The MIDI OUT
+                transmitter is open-drain, so it interfaces better with the MIDI OUT circuit than the built-in UART.
+                Uses <a href="https://github.com/rppicomidi/ring_buffer_lib">ring_buffer_lib</a> to provide deeper FIFOs.
+                You can use this library with <a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>
+                to add up to 7 MIDI Out ports and one MIDI IN port.
+            </li>
+        </ul>
+        </div>
+        <div class="grid main">
+        <h2>Other Software Libraries</h2>
+        <h3>SSD1306 OLED UI</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/rppicomidi/pico-ssd1306-mono-graphics-lib">pico-ssd1306-mono-graphics-lib</a>
+                Raspberry Pi Pico SSD1306 graphics library that can manage multiple displays at the same time. The drivers
+                are non-blocking and optimized for speed. They only redraw the parts of the display that need to be redrawn.
+                You can update 9 displays simultaneously every 23ms or so. The library supports drawing dots, lines, rectangles
+                (filled or unfilled), circles (filled or unfilled) and fixed-pitch characters 8pt, 12pt, 16pt or 24pt. It
+                supports clipping rectangles, 0, 90, 180 and 270 screen rotation. It can generate screen dumps. The library
+                works without RTOS support.
+            </li>
+            <li>
+                <a href="https://github.com/rppicomidi/pico-mono-ui-lib">pico-mono-ui-lib</a>
+                A simple monochrome UI library for a small mono screen and the Raspberry Pi Pico. This library supports
+                multiple screen navigation, scrollable menus, button navigation, HID keyboard navigation, text entry,
+                and number adjustment menu items. Values modified in the UI can be serialized to JSON.
+            </li>
+        </ul>
+        <h3>Non-volatile storage</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/rppicomidi/littlefs-lib">fork of littlefs-lib</a>
+                This fork modified the Pico littlefs-lib to add support for running littlefs
+                on RP2040 core 0 whilst core 1 is also active doing something else.
+            </li>
+        </ul>
+        <h3>Misc</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/rppicomidi/pico-c-utilities">pico-c-utilities</a>
+                A collection of C & C++ functions for console I/O and other useful things for the Raspberry Pi Pico.
+                This library right now only has one function in it: <span style="code">int getsn(char* cp, int size)</span>.
+            </li>
+        </ul>
+        </div>
+        <div class="grid main">
+        <h2>Other Projects</h2>
+        Most of these are simple demo programs for testing libraries.
+        Check out <a href="https://github.com/rppicomidi">my GitHub site</a> to see for yourself.
+        </div>
 	</body>
 </html>
 
