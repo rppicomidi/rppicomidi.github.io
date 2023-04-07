@@ -18,6 +18,19 @@
         </div>
         <div class="grid main">
         <h1>What's New</h1>
+        <h2>07-Apr-2023 Updates</h2>
+        <ul>
+        <li><a href="https://github.com/rppicomidi/pico-usb-host-msc-demo">pico-usb-host-msc-demo</a>
+        Changed build methods, added code and fixed CMake bugs to allow Pico W builds to coexist
+        with using the <code>Pico-PIO-USB</code> project for the USB Host port</li>
+        <li><a href="https://github.com/rppicomidi/pico-mc-display-bridge">pico-mc-display-bridge</a>
+        Made the <code>pico_pico_midi_lib</code> submodule project public and fixed other issues such
+        that it should be possible now for people other than me to build the code. Please file an
+        issue if you have any trouble building the code, missing files, etc.
+        </li>
+        <li><a href="https://github.com/rppicomidi/pico-ssd1306-mono-graphics-lib">pico-ssd1306-mono-graphics-lib</a>
+        Now the library will properly claim PIO State Machines so that the PIO units may be shared more easily</li>
+        </ul>
         <h2>25-Mar-2023 Updates</h2>
         <ul>
         <li>
@@ -63,18 +76,6 @@
             <li><a href="https://github.com/rppicomidi/midi2usbhub-web">midi2usbhub-web</a>
             A new project for the Pico W that allows you to interconnect old school DIN MIDI devices and USB hub connected
             USB MIDI devices and control all the interconnections via a Web interface.
-            </li>
-        </ul>            
-        <h2>26-Jan-2023 Updates</h2>
-        <ul>
-            <li><a href="https://github.com/rppicomidi/midi2usbhost">midi2usbhost</a>
-            Now can use UART0 instead of UART1. Simplified the MIDI UART configuration file.
-            Updated the CMakelists.txt and the documentation.
-            </li>
-            <li>
-            <a href="https://github.com/rppicomidi/midi_uart_lib">midi_uart_lib</a>
-            Applied UART0 bug fix pull request. Now can use just UART0, just UART1,
-            or both. Updated documentation.
             </li>
         </ul>
         <h2>MIDI Projects</h2>
