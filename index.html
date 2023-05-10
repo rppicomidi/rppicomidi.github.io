@@ -18,6 +18,19 @@
         </div>
         <div class="grid main">
         <h1>What's New</h1>
+        <h2>8-May-2023 Updates</h2>
+        <ul>
+        <li><a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>
+        Add support for using the PIO state machines for MIDI Out only mode.
+        </li>
+        <li><a href="https://github.com/rppicomidi/midi-multistream2usbdev">midi-multistream2usbdev</a>
+        This new project is designed to give your PC, Mac, etc. a 2 input 6 output USB to 5-pin DIN MIDI
+        interface. It includes files <code>midi_device_multistream.c/h</code> that show how to use the
+        tinyusb library to build a USB MIDI device with more than one virtual MIDI cable per USB endpoint.
+        It also demonstrates using <a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>
+        in both MIDI UART mode and MIDI Out only mode.
+        </li>
+        </ul>
         <h2>07-Apr-2023 Updates</h2>
         <ul>
         <li><a href="https://github.com/rppicomidi/pico-usb-host-msc-demo">pico-usb-host-msc-demo</a>
@@ -84,7 +97,12 @@
                 Add old school MIDI IN and MIDI OUT to a MIDI device with a USB B device port.
             </li>
             <li><a href="https://github.com/rppicomidi/midi2usbdev">midi2usbdev</a> 
-                Create a PC MIDI interface with one MIDI IN and one MIDI OUT.
+                Create a PC, Mac, etc. MIDI interface with one MIDI IN and one MIDI OUT.
+            </li>
+            <li><a href="https://github.com/rppicomidi/midi-multistream2usbdev">midi-multistream2usbdev</a>
+        	Create a PC, Mac, etc. 2 input 6 output USB to 5-pin DIN MIDI interface. Mac, iOS/iPadOS,
+        	and Linux software will show the MIDI port names MIDI IN A, MIDI IN B, MIDI OUT A, MIDI OUT B,
+        	..., MIDI OUT E, MIDI OUT F.
             </li>
             <li><a href="https://github.com/rppicomidi/midi2usbhub">midi2usbhub</a> 
                 Interconnect MIDI devices via a USB hub or old school MIDI. Configure the
@@ -143,13 +161,6 @@
                     to make the USB descriptor on the Pico's device port exactly the same as the USB descriptor of the
                     MIDI device attached to the Pico-PIO-USB host port. If the TinyUSB project merges a pull reequest
                     for the USB MIDI Host driver, this fork will be mostly unnecessary.
-            </li>
-            <li>
-                <i>Coming soon: pio_midi_out_lib</i>. Library adds up to 8 PIO-based MIDI OUT serial ports. The MIDI OUT
-                transmitter is open-drain, so it interfaces better with the MIDI OUT circuit than the built-in UART.
-                Uses <a href="https://github.com/rppicomidi/ring_buffer_lib">ring_buffer_lib</a> to provide deeper FIFOs.
-                You can use this library with <a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>
-                to add up to 7 MIDI Out ports and one MIDI IN port.
             </li>
         </ul>
         </div>
