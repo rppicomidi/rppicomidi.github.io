@@ -18,6 +18,32 @@
         </div>
         <div class="grid main">
         <h1>What's New</h1>
+        <h2>24-Oct-2023 Updates</h2>
+        <ul>
+        <li><a href="https://github.com/rppicomidi/midi_uart_lib">midi_uart_lib</a>
+        has been updated to move ring_buffer_lib to a peer subdirectory instead of
+        a sub-directory of midi_uart_lib. This makes it simpler to coexist with
+        <a href="https://github.com/rppicomidi/ble-midi2usbhost">ble-midi2usbhost</a>,
+        and <a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>.
+        I have updated the following project that use midi_uart_lib so they still build.
+       	   <ul>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhost">midi2usbhost</a></li>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhub">midi2usbhub</a></li>
+   	   <li><a href="https://github.com/rppicomidi/midi2usbdev">midi2usbdev</a></li>
+       	   </ul>
+        </li>
+        <li><a href="https://github.com/rppicomidi/pio_midi_uart_lib">pio_midi_uart_lib</a>
+        documentation has been updated to describe the output only MIDI port feature and to
+        point to the <a href="https://github.com/rppicomidi/midi-multistream2usbdev">midi-multistream2usbdev</a>
+        example.
+        </li>
+       	   <ul>
+       	   <li><a href="https://github.com/rppicomidi/ble-midi2usbhost">ble-midi2usbhost</a></li>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhost">midi2usbhost</a></li>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhub">midi2usbhub</a></li>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhub-web">midi2usbhub-web</a></li>
+       	   </ul>
+        </ul>
         <h2>21-Aug-2023 Updates</h2>
         <ul>
         <li><a href="https://github.com/rppicomidi/usb_midi_host">usb_midi_host</a>
@@ -112,21 +138,6 @@
         </ul>
 	</li>
 	</ul>
-        <h2>14-Mar-2023 Updates</h2>
-        <ul>
-            <li><a href="https://github.com/rppicomidi/pico-usb-host-msc-demo">pico-usb-host-msc-demo</a>
-            Bug fix: now compiles with the latest tinyusb library as of this date.
-            </li>
-            <li><a href="https://github.com/rppicomidi/pico-mc-display-bridge">pico-mc-display-bridge</a>
-            A new project that allows you to add to any Mackie Control compatible USB MIDI controller
-            displays for each channel strip, a timecode display, a VPot mode display, some additional
-            per channel strip buttons, and other special function buttons.
-            </li>
-            <li><a href="https://github.com/rppicomidi/midi2usbhub-web">midi2usbhub-web</a>
-            A new project for the Pico W that allows you to interconnect old school DIN MIDI devices and USB hub connected
-            USB MIDI devices and control all the interconnections via a Web interface.
-            </li>
-        </ul>
         <h2>MIDI Projects</h2>
         <ul>
             <li><a href="https://github.com/rppicomidi/pico-w-ble-midi-server-demo">pico-w-ble-midi-server-demo</a>
