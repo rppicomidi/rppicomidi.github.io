@@ -18,6 +18,44 @@
         </div>
         <div class="grid main">
         <h1>What's New</h1>
+        <h2>11-Feb-2024 Updates</h2>
+        <ul>
+        <li><a href="https://github.com/rppicomidi/usb_midi_host">usb_midi_host</a>
+        Fixed a bug that prevented MIDI devices that are designed with high-speed
+        USB in mind from enumerating. The maximum full speed USB bulk transfer is
+        64 bytes. Two DSP guitar pedals assumed they were only hooking up to a high speed
+        capable host and specified a maximum bulk transfer of 512 bytes. The code
+        that attempted to correct this did not quite work. It is fixed now. Debugging
+        this issue revealed that the default enumeration buffer set by
+        CFG_TUH_ENUMERATION_BUFSIZE is too small to work with probably all
+        audio+MIDI devices like DSP guitar pedals. Future versions of the C/C++
+        examples will likely bump up CFG_TUH_ENUMERATION_BUFSIZE to 512 bytes.
+        Arduino examples require some hacking of the Adafruit TinyUSB Library.
+        See the project's README file for more details.
+        </li>
+        <li><a href="https://github.com/rppicomidi/usb_midi_host">usb_midi_host</a>
+	This driver has the examples and documentation updated for use with either
+	the pico-sdk or the Arduino IDE. Further, the examples will work with either
+	the native RP2040 USB hardware or with a PIO USB host port. (Arduino sketches
+	require the Adafruit TinyUSB Library) You can load this library using the
+	Arduino Library Manager.
+        </li>        
+        <li><a href="https://github.com/rppicomidi/EZ_USB_MIDI_HOST">EZ_USB_MIDI_HOST</a>
+	This C++ library code that lets Arduino sketches and C/C++ programs use the
+	Arduino MIDI Library with the usb_midi_host library and the TinyUSB Library
+	(Arduino sketches require the Adafruit TinyUSB Library) You can load this
+	library using the Arduino Library Manager.
+        </li>
+        <li><a href="https://github.com/rppicomidi/EZ_MIDI2USB_HOST">EZ_MIDI2USB_HOST</a>
+        This Arduino sketch allows you to connect a USB MIDI Device such as a MIDI keyboard
+        to a serial port MIDI device such as a semi-modular synthesizer. It does the same thing
+        as <a href="https://github.com/rppicomidi/midi2usbhost">midi2usbhost</a>, except
+        it uses the Arduino IDE and the
+        <a href="https://github.com/rppicomidi/EZ_USB_MIDI_HOST">EZ_USB_MIDI_HOST</a>
+        library to do the work. The code is designed to run on a Raspberry Pi Pico board,
+        but it should work on any RP2040 type board with minor modifications.
+        </li>
+        </ul>
         <h2>24-Oct-2023 Updates</h2>
         <ul>
         <li><a href="https://github.com/rppicomidi/midi_uart_lib">midi_uart_lib</a>
