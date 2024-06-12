@@ -18,6 +18,38 @@
         </div>
         <div class="grid main">
         <h1>What's New</h1>
+        <h2>12-Jun-2024 Updates</h2>
+       	<ul>
+       	<li>
+       	There is a new application and a new driver:
+       	<ul>
+            <li><a href="https://github.com/rppicomidi/midi2piousbhub">midi2piousbhub</a> 
+                Interconnect MIDI devices via a USB hub or old school MIDI. Configure the
+                interconnections using a serial port console and save the configurations as
+                presets in the Pico board's serial flash memory. Back up the presets to
+                USB flash. The USB MIDI host is implemented using the RP2040's PIO modules,
+                and the RP2040 native USB port is a USB device port that provides an additional
+                MIDI I/O port (to use a virtual instrument on an iPad, for example), and
+                a USB serial port for the command line interface.
+            </li>
+            <li><a href="https://github.com/rppicomidi/cdc_stdio_lib">cdc_stdio_lib</a>
+                Library allows a pico-sdk application that uses TinyUSB to add USB CDC stdio support.
+                For example, if you are using the RP2040's USB port as a USB MIDI device,
+                you can add a CDC class serial port interface as well. The stdio calls like printf
+                will route output to the USB port, etc. The 
+                <a href="https://github.com/rppicomidi/midi2piousbhub">midi2piousbhub</a> project
+                uses this library.
+            </li>
+       	</ul>
+       	</li>
+       	<li>To allow Arduino applications to have an easier time configuring MIDI libraries,
+	<ul><li><a href="https://github.com/rppicomidi/usb_midi_host">usb_midi_host</a> adds
+	run-time buffer length configuration</li>
+	<li><a href="https://github.com/rppicomidi/EZ_USB_MIDI_HOST">EZ_USB_MIDI_HOST</a>
+	API has changed to a C++ template parameterized by a settings class</li>
+	</ul>
+	</li>
+	</ul>
         <h2>12-Feb-2024 Updates</h2>
        	<ul>
        	<li>
@@ -217,7 +249,17 @@
                 Interconnect MIDI devices via a USB hub or old school MIDI. Configure the
                 interconnections using a serial port console and save the configurations as
                 presets in the Pico board's serial flash memory. Back up the presets to
-                USB flash.
+                USB flash. The USB MIDI host is implemented using the RP2040's native USB
+                hardware.
+            </li>
+            <li><a href="https://github.com/rppicomidi/midi2piousbhub">midi2piousbhub</a> 
+                Interconnect MIDI devices via a USB hub or old school MIDI. Configure the
+                interconnections using a serial port console and save the configurations as
+                presets in the Pico board's serial flash memory. Back up the presets to
+                USB flash. The USB MIDI host is implemented using the RP2040's PIO modules,
+                and the RP2040 native USB port is a USB device port that provides an additional
+                MIDI I/O port (to use a virtual instrument on an iPad, for example), and
+                a USB serial port for the command line interface.
             </li>
             <li><a href="https://github.com/rppicomidi/pico-usb-midi-filter">pico-usb-midi-filter</a>
                 Connect a Raspberry Pi Pico between a USB MIDI device and a USB Host to modify the USB MIDI traffic.
@@ -315,6 +357,12 @@
             	Demo code provides a command line interface for managing up to 4 USB Mass Storage Class
             	devices connected via a USB hub to a single Pico or Pico W. The code is different from
             	the MSC demo provided with the tinyusb stack.
+            </li>
+            <li><a href="https://github.com/rppicomidi/cdc_stdio_lib">cdc_stdio_lib</a>
+                Library allows a pico-sdk application that uses TinyUSB to add USB CDC stdio support.
+                For example, if you are using the RP2040's USB port as a USB MIDI device,
+                you can add a CDC class serial port interface as well. The stdio calls like printf
+                will route output to the USB port, etc.
             </li>
         </ul>
         </div>
