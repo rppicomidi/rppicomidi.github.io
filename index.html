@@ -18,6 +18,28 @@
         </div>
         <div class="grid main">
         <h1>What's New</h1>
+        <h2>22-Oct-2024 Updates</h2>
+        <ul>
+        <li>
+      	Applications updated to support Pico SDK 2.0
+      	<ul>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhost">midi2usbhost</a></li>
+       	   <li><a href="https://github.com/rppicomidi/midi2usbhub">midi2usbhub</a></li>
+       	   <li><a href="https://github.com/rppicomidi/pico-usb-midi-filter">pico-usb-midi-filter</a></li>
+       	   <li><a href="https://github.com/rppicomidi/pico-usb-midi-processor">pico-usb-midi-processor</a></li>
+       	   <li><a href="https://github.com/rppicomidi/midi2piousbhub">midi2piousbhub</a></li>
+        </ul></li>
+        <li><a href="https://github.com/rppicomidi/midi2piousbhub">midi2piousbhub</a>
+        If you are running on a Pico-W board, you can now route Bluetooth Low Energy MIDI
+        (BLE-MIDI) clients (like iPads and computers) and servers (like control surfaces
+        and keyboards) the same way you route USB MIDI and serial port MIDI devices. Bluetooth is supported
+        using the CLI, which is accessible via the UART0 interface or via the USB device port
+        (USB CDC ACM).</li>
+        <li><a href="https://github.com/rppicomidi/pico-w-ble-midi-lib">pico-w-ble-midi-lib</a>
+        Added Bluetooth LE client capability include scan for advertising servers and connect
+        plus Bluetooth bonded device list management. The libraries have be updated to allow
+        you to switch between client and server mode within one application.</li>
+        </ul>
         <h2>12-Jun-2024 Updates</h2>
        	<ul>
        	<li>
@@ -253,7 +275,7 @@
                 hardware.
             </li>
             <li><a href="https://github.com/rppicomidi/midi2piousbhub">midi2piousbhub</a> 
-                Interconnect MIDI devices via a USB hub or old school MIDI. Configure the
+                Interconnect MIDI devices via a USB hub, Bluetooth Low Energy MIDI or old school MIDI. Configure the
                 interconnections using a serial port console and save the configurations as
                 presets in the Pico board's serial flash memory. Back up the presets to
                 USB flash. The USB MIDI host is implemented using the RP2040's PIO modules,
@@ -302,7 +324,7 @@
                 to add user configurable deep FIFOs.
             </li>
             <li><a href="https://github.com/rppicomidi/pico-w-ble-midi-lib">pico-w-ble-midi-lib</a>
-                A MIDI 1.0 Bluetooth LE GATT service server.
+                A MIDI 1.0 Bluetooth LE GATT service server and client.
             </li>
             <li>
                 <a href="https://github.com/rppicomidi/tinyusb">fork of tinyusb</a> This was as far as I know the first public
