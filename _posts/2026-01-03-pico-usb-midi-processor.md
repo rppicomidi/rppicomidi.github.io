@@ -12,11 +12,9 @@ image:
 # [pico-usb-midi-processor](https://github.com/rppicomidi/pico-usb-midi-processor)
 Use a Raspberry Pi Pico board to process USB MIDI data between a USB MIDI Keyboard or other device and a PC or other USB MIDI Host.
 
-This project provides an OLED-based UI and a command line interpreter to help you configure the processing. It uses a number of libraries:
-- 
+This project provides an OLED-based UI and a command line interpreter to help you configure the processing.
 
-![soldered Pico board hardware](assets/img/pico-usb-midi-processor/PUMP_dev_board.jpg)
-_A soldered prototype using a Raspberry Pi Pico Board_
+It can also work with an [Adafruit Feather RP2040 with USB Type A Host](https://www.adafruit.com/product/5723).
 
 ![Adafruit Feather RP2040 with USB A Host breadboard](assets/img/pico-usb-midi-processor/PUMP_adafruit_breadboard.jpg)
 _A breadboard prototype using an Adafruit Feather RP2040 with USB A Host_

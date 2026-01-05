@@ -10,4 +10,4 @@ pin: false
 Use a Raspbery Pi Pico to add old school MIDI IN and MIDI OUT to MIDI devices with a USB B device port.
 
 This is my oldest project. It helped drive USB MIDI Host support in the [TinyUSB project](https://github.com/hathach/tinyusb).
-It eventually led to the development of the [usb_midi_host]({% link _posts/2025-01-03-usb_midi_host.md %}) library.
+It eventually led to the development of the [usb_midi_host]({% link _posts/2026-01-03-usb_midi_host.md %}) library.
