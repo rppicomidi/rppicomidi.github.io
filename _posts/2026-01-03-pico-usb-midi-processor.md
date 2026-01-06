@@ -2,7 +2,7 @@
 title: pico-usb-midi-processor
 date: 2026-01-03 18:38:00 -08000
 categories: [MIDI, MIDI-Hardware-Firmware]
-tags: [midi, usb-midi-host, tinyusb, usb-midi-device, midi-processing, rp2040, c-sdk]     # TAG names should always be lowercase
+tags: [usb-midi-host, tinyusb, usb-midi-device, midi-processing, cli, command-line, command-line-interpreter, usb-msc, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false
 image:
