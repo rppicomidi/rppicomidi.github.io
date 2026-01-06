@@ -1,7 +1,7 @@
 ---
 title: pico-usb-midi-filter
 date: 2026-01-05 16:26:00 -08000
-categories: [MIDI, MIDI-Hardware-Firmware]
+categories: [MIDI, MIDI-DIY-Project]
 tags: [usb-midi-host, tinyusb, usb-midi-device, midi-processing, rp2040, c-sdk, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false
