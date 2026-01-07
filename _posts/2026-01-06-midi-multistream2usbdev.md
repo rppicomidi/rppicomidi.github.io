@@ -1,7 +1,7 @@
 ---
 title: midi-multistream2usbdev
 date: 2026-01-06 09:45:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, midi-multistream2usbdev]
 tags: [tinyusb, usb-midi-device, serial-port-midi, rp2040, pico-w, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

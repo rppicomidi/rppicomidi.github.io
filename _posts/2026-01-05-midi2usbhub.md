@@ -1,7 +1,7 @@
 ---
 title: midi2usbhub
 date: 2026-01-05 19:22:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, midi2usbhub]
 tags: [usb-midi-host, tinyusb, serial-port-midi, midi-processing, midi-patchbay, cli, command-line, command-line-interpreter, usb-msc, rp2040, pico-w, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

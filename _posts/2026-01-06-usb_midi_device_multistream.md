@@ -1,7 +1,7 @@
 ---
 title: usb_midi_device_multistream
 date: 2026-01-06 14:51:00 -08000
-categories: [MIDI, MIDI-Firmware-Library]
+categories: [MIDI-Firmware-Library, usb_midi_device_multistream]
 tags: [usb-midi-device, tinyusb, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

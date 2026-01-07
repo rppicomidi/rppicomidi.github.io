@@ -1,7 +1,7 @@
 ---
 title: pico-w-ble-midi-lib
 date: 2026-01-05 16:57:00 -08000
-categories: [MIDI, MIDI-Firmware-Library]
+categories: [MIDI-Firmware-Library, pico-w-ble-midi-lib]
 tags: [bluetooth-midi, bluetooth-le-midi, pico-w, pico2-w, rp2040, rp2350, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

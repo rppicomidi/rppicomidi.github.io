@@ -1,7 +1,7 @@
 ---
 title: pico-c-utilities
 date: 2026-01-06 15:07:00 -08000
-categories: [Utility, Utility-Firmware-Library]
+categories: [Utility-Firmware-Library, pico-c-utilities]
 tags: [rp2040, rp2350, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

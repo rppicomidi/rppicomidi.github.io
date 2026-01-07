@@ -1,7 +1,7 @@
 ---
 title: pico-w-connection-manager-demo
 date: 2026-01-06 14:26:00 -08000
-categories: [Demo, Demo-Firmware-Application]
+categories: [Demo-Firmware-Application, pico-w-connection-manager-demo]
 tags: [tinyusb, cli, command-line, command-line-interpreter, pico-w, web-server, lwip, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

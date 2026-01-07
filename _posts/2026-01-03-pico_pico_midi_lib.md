@@ -1,7 +1,7 @@
 ---
 title: pico_pico_midi_lib
 date: 2026-01-06 14:21:00 -08000
-categories: [MIDI, MIDI-Firmware-Library]
+categories: [MIDI-Firmware-Library, pico_pico_midi_lib]
 tags: [serial-port-midi, rp2040, rp2350, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

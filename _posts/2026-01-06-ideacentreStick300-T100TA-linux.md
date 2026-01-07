@@ -1,7 +1,7 @@
 ---
 title: ideacentreStick300-T100TA-linux
 date: 2026-01-06 11:43:00 -08000
-categories: [Documentation, Linux-On-Old-Hardware]
+categories: [Linux-On-Old-Hardware, ideacentreStick300-T100TA-linux]
 tags: [linux, idea-centre-stick-300, t100ta, xubuntu]     # TAG names should always be lowercase
 comments: false
 pin: false

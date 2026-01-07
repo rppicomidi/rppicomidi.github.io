@@ -1,7 +1,7 @@
 ---
 title: pico-w-connection-manager
 date: 2026-01-06 15:03:00 -08000
-categories: [Utility, Utility-Firmware-Library]
+categories: [Utility-Firmware-Library, pico-w-connection-manager]
 tags: [rp2040, rp2350, pico-w, wifi, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

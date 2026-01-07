@@ -1,7 +1,7 @@
 ---
 title: ble-midi2usbhost
 date: 2026-01-05 16:38:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, ble-midi2usbhost]
 tags: [ usb-midi-host, tinyusb, bluetooth-midi, bluetooth-le-midi, pico-w, pico2-w, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: true

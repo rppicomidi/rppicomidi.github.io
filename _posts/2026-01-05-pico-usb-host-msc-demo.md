@@ -1,7 +1,7 @@
 ---
 title: pico-usb-host-msc-demo
 date: 2026-01-05 16:26:00 -08000
-categories: [Demo, Demo-Firmware-Application]
+categories: [Demo-Firmware-Application, pico-usb-host-msc-demo]
 tags: [usb-msc, tinyusb, cli, command-line, command-line-interpreter, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

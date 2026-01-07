@@ -1,7 +1,7 @@
 ---
 title: pico-embedded-cli
 date: 2026-01-06 14:33:00 -08000
-categories: [Demo, Demo-Firmware-Application]
+categories: [Demo-Firmware-Application, pico-embedded-cli]
 tags: [cli, command-line, command-line-interpreter, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

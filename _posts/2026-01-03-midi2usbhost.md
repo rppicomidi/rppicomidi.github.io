@@ -1,7 +1,7 @@
 ---
 title: midi2usbhost
 date: 2026-01-03 16:12:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, midi2usbhost]
 tags: [usb-midi-host, tinyusb, serial-port-midi, rp2040, rp2350, c-sdk, arduino]     # TAG names should always be lowercase
 comments: false
 pin: true

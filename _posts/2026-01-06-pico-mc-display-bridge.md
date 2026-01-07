@@ -1,7 +1,7 @@
 ---
 title: pico-mc-display-bridge
 date: 2026-01-06 10:00:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, pico-mc-display-bridge]
 tags: [usb-midi-host, tinyusb, usb-midi-device, serial-port-midi, daw-control, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

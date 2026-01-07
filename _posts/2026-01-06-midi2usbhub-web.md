@@ -1,7 +1,7 @@
 ---
 title: midi2usbhub-web
 date: 2026-01-06 10:11:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, midi2usbhub-web]
 tags: [usb-midi-host, tinyusb, serial-port-midi, embedded-web-server, wifi, rp2040, pico-w, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

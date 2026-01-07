@@ -1,7 +1,7 @@
 ---
 title: usb_midi_dev_ac_optional
 date: 2026-01-03 19:13:00 -08000
-categories: [MIDI, MIDI-Firmware-Library]
+categories: [MIDI-Firmware-Library, usb_midi_dev_ac_optional]
 tags: [usb-midi-device, tinyusb, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

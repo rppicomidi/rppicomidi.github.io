@@ -1,7 +1,7 @@
 ---
 title: pico-w-ble-midi-server-demo
 date: 2026-01-06 11:32:00 -08000
-categories: [Demo, MIDI-Firmware-Application]
+categories: [MIDI-Firmware-Application, pico-w-ble-midi-server-demo]
 tags: [bluetooth-midi, bluetooth-le-midi, pico-w, pico2-w, rp2040, rp2350, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: pico_usb_host_troubleshooting
 date: 2026-01-06 14:12:00 -08000
-categories: [Documentation, USB-Debugging]
+categories: [USB-Debugging, pico_usb_host_troubleshooting]
 tags: [usb-midi-host, debugging, usb-midi-device]     # TAG names should always be lowercase
 comments: false
 pin: false

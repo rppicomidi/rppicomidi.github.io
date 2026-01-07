@@ -1,7 +1,7 @@
 ---
 title: pico-mono-ui-lib
 date: 2026-01-03 13:12:00 -08000
-categories: [Graphics, Graphics-Firmware-Library]
+categories: [Graphics-Firmware-Library, pico-mono-ui-lib]
 tags: [mono-ui-lib, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

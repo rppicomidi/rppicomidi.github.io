@@ -1,7 +1,7 @@
 ---
 title: pico-usb-midi-interface
 date: 2026-01-06 11:51:00 -08000
-categories: [MIDI, MIDI-DIY-Project]
+categories: [MIDI-DIY-Project, pico-usb-midi-interface]
 tags: [tinyusb, usb-midi-device, midi-patchbay, serial-port-midi, cli, command-line, command-line-interpreter, rp2040, rp2350, usb-cdc-acm, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: true

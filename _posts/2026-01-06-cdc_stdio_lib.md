@@ -1,7 +1,7 @@
 ---
 title: cdc_stdio_lib
 date: 2026-01-06 15:47:00 -08000
-categories: [Utility, Utility-Firmware-Library]
+categories: [Utility-Firmware-Library, cdc_stdio_lib]
 tags: [rp2040, rp2350, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false

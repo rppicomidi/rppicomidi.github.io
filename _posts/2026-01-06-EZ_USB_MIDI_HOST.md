@@ -1,7 +1,7 @@
 ---
 title: EZ_USB_MIDI_HOST
 date: 2026-01-06 09:54:00 -08000
-categories: [MIDI, MIDI-Firmware-Library]
+categories: [MIDI-Firmware-Library, EZ_USB_MIDI_HOST]
 tags: [usb-midi-host, tinyusb, rp2040, rp2350, c-sdk, arduino]     # TAG names should always be lowercase
 comments: false
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: usb_midi_descriptor_lib
 date: 2026-01-06 15:52:00 -08000
-categories: [MIDI, MIDI-Firmware-Library]
+categories: [MIDI-Firmware-Library, usb_midi_descriptor_lib]
 tags: [usb-midi-host, tinyusb, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false
