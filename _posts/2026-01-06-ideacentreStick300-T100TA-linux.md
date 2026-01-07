@@ -6,7 +6,7 @@ tags: [linux, idea-centre-stick-300, t100ta, xubuntu]     # TAG names should alw
 comments: false
 pin: false
 ---
-# [ideacentreStick300-T100TA-linux](https://github.com/rppicomidi/rideacentreStick300-T100TA-linux)
+# [ideacentreStick300-T100TA-linux](https://github.com/rppicomidi/ideacentreStick300-T100TA-linux)
 How to set up Xubuntu 22.04 on a Lenovo ideacentre Stick 300 or Asus T100TA.
 
 I will likely archive this project soon. 22.04 has been out of support for a while.
