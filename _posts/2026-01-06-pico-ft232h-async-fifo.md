@@ -1,7 +1,7 @@
 ---
 title: pico-ft232h-async-fifo
 date: 2026-01-06 15:47:00 -08000
-categories: [Utility, Utility-Firmware-Library]
+categories: [Utility, Hardware-Firmware-Library]
 tags: [rp2040, rp2350, ft232h, async-fifo-245-mode, c-sdk]     # TAG names should always be lowercase
 comments: false
 pin: false
