@@ -4,7 +4,7 @@ date: 2026-01-05 19:33:00 -08000
 categories: [MIDI, MIDI-DIY-Project]
 tags: [usb-midi-host, tinyusb, usb-midi-device, serial-port-midi, bluetooth-midi, bluetooth-le-midi, midi-patchbay, cli, command-line, command-line-interpreter, usb-msc, usb-cdc-acm, rp2040, pico-w, c-sdk]     # TAG names should always be lowercase
 comments: false
-pin: false
+pin: true
 ---
 # [midi2piousbhub](https://github.com/rppicomidi/midi2piousbhub)
 Use a Raspberry Pi Pico to interconnect MIDI devices via a USB hub or old school MIDI, or Bluetooth-LE,

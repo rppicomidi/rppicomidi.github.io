@@ -4,7 +4,7 @@ date: 2026-01-06 11:51:00 -08000
 categories: [MIDI, MIDI-DIY-Project]
 tags: [tinyusb, usb-midi-device, midi-patchbay, serial-port-midi, cli, command-line, command-line-interpreter, rp2040, rp2350, usb-cdc-acm, c-sdk]     # TAG names should always be lowercase
 comments: false
-pin: false
+pin: true
 ---
 # [pico-usb-midi-interface](https://github.com/rppicomidi/pico-usb-midi-interface)
 8-IN 8-OUT USB device to serial port MIDI interface/patch bay for the Raspberry Pi Pico 2 (RP2350). 6-IN 6-OUT for Pico (RP2040).

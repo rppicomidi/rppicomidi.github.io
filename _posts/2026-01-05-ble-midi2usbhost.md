@@ -4,7 +4,7 @@ date: 2026-01-05 16:38:00 -08000
 categories: [MIDI, MIDI-DIY-Project]
 tags: [ usb-midi-host, tinyusb, bluetooth-midi, bluetooth-le-midi, pico-w, pico2-w, rp2040, c-sdk]     # TAG names should always be lowercase
 comments: false
-pin: false
+pin: true
 image:
   path: assets/img/ble-midi2usbhost/ble-midi2usbhost.jpg
   alt: USB MIDI keyboard connected to a battery-powered Pico with Bluetooth LE connection to an iPad.
