@@ -1,5 +1,5 @@
 ---
-title: A MIDI Controller for VCV Rack
+title: A MIDI Controller for VCV Rack - Updated
 date: 2026-09-29 15:22:00 -08000
 categories: [MIDI-DIY-Project, twist4-Twist]
 tags: [vcv-rack, usb-midi-device, rp2040, c-sdk, rotary-encoders, endless-encoders, graphics]     # TAG names should always be lowercase
